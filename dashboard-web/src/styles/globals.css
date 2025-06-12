@@ -1,0 +1,94 @@
+/* eslint-disable */
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom dashboard styles with darker brown theme matching FG-Label */
+@layer base {
+  html {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-dashboard-background text-dashboard-text;
+  }
+}
+
+@layer components {
+  /* Button styles with darker brown theme */
+  .dashboard-btn {
+    @apply px-4 py-2 rounded font-semibold text-sm transition-all duration-200 border;
+  }
+  
+  .dashboard-btn-primary {
+    @apply dashboard-btn bg-dashboard-header text-white border-dashboard-header hover:bg-brown-800;
+  }
+  
+  .dashboard-btn-secondary {
+    @apply dashboard-btn bg-brown-100 text-brown-800 border-brown-300 hover:bg-brown-200;
+  }
+  
+  .dashboard-btn-selected {
+    @apply dashboard-btn bg-dashboard-highlight text-white border-dashboard-highlight hover:bg-brown-800;
+  }
+  
+  /* Card styles with darker brown theme */
+  .dashboard-card {
+    @apply bg-dashboard-card rounded-lg shadow-card p-6 border border-brown-100;
+  }
+  
+  /* Table styles with darker brown theme */
+  .dashboard-table {
+    @apply w-full border-collapse bg-dashboard-card rounded-lg overflow-hidden shadow-card;
+  }
+  
+  .dashboard-table th {
+    @apply bg-dashboard-header text-white px-4 py-3 text-center font-bold;
+  }
+  
+  .dashboard-table td {
+    @apply px-4 py-3 text-center border-b border-brown-100;
+  }
+  
+  .dashboard-table tr:nth-child(even) {
+    @apply bg-brown-50;
+  }
+  
+  .dashboard-table tr:hover {
+    @apply bg-brown-100;
+  }
+  
+  /* Status colors with darker brown theme */
+  .status-clean {
+    @apply bg-dashboard-clean text-brown-800;
+  }
+  
+  .status-complete {
+    @apply bg-dashboard-complete text-white;
+  }
+  
+  .status-working {
+    @apply bg-dashboard-working text-white;
+  }
+  
+  .status-flash {
+    @apply animate-flash;
+  }
+  
+  /* Header styles with darker brown theme */
+  .dashboard-header {
+    @apply bg-dashboard-header text-white shadow-lg;
+  }
+  
+  /* Form styles with darker brown theme */
+  .dashboard-select {
+    @apply border border-brown-300 rounded px-3 py-2 bg-dashboard-card focus:outline-none focus:ring-2 focus:ring-dashboard-header;
+  }
+}
+
+@layer utilities {
+  .text-time {
+    font-variant-numeric: tabular-nums;
+  }
+} 

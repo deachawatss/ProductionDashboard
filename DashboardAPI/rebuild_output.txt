@@ -1,0 +1,2 @@
+Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Login failed for user 'NWFTH\deachawat'..
+Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Cannot open database "TFCLIVE" requested by the login. The login failed..
