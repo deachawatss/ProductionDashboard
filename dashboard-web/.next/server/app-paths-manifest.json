@@ -1,5 +1,7 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/downtime/page": "app/downtime/page.js",
-  "/analytics/page": "app/analytics/page.js"
+  "/realtime/page": "app/realtime/page.js",
+  "/analytics/page": "app/analytics/page.js",
+  "/downtime/page": "app/downtime/page.js"
 }

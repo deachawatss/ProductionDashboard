@@ -394,7 +394,6 @@ export default function Analytics() {
                     <th className="px-4 py-3 text-left text-xs font-medium text-dashboard-text uppercase tracking-wider">Production Line</th>
                     <th className="px-4 py-3 text-center text-xs font-medium text-dashboard-text uppercase tracking-wider">Total Batches</th>
                     <th className="px-4 py-3 text-center text-xs font-medium text-dashboard-text uppercase tracking-wider">Production Rate<br/><span className="text-xs normal-case">Bags/hr</span></th>
-                    <th className="px-4 py-3 text-center text-xs font-medium text-dashboard-text uppercase tracking-wider">Net Production Rate<br/><span className="text-xs normal-case">Bags/hr</span></th>
                     <th className="px-4 py-3 text-center text-xs font-medium text-dashboard-text uppercase tracking-wider">Avg Cycle Time<br/><span className="text-xs normal-case">minutes</span></th>
                     <th className="px-4 py-3 text-center text-xs font-medium text-dashboard-text uppercase tracking-wider">Completion Rate</th>
                     <th className="px-4 py-3 text-center text-xs font-medium text-dashboard-text uppercase tracking-wider">Downtime<br/><span className="text-xs normal-case">(includes cleaning)</span></th>
@@ -416,11 +415,6 @@ export default function Analytics() {
                       <td className="px-4 py-3 text-sm text-center">
                         <span className={getEfficiencyColor(cell.avgBagsPerHour)}>
                           {formatNumber(cell.avgBagsPerHour)}
-                        </span>
-                      </td>
-                      <td className="px-4 py-3 text-sm text-center">
-                        <span className={getEfficiencyColor(cell.avgNetBagsPerHour)}>
-                          {formatNumber(cell.avgNetBagsPerHour)}
                         </span>
                       </td>
                       <td className="px-4 py-3 text-sm text-center text-blue-600 font-semibold">{formatNumber(cell.avgCycleTime)}</td>
@@ -453,7 +447,6 @@ export default function Analytics() {
             <div className="flex justify-between items-center">
               <div>
                 <h2 className="text-lg font-semibold">Product Performance Analysis</h2>
-                <p className="text-sm opacity-90">Production performance by product type (minimum 3 batches)</p>
               </div>
               <div className="w-64">
                 <input

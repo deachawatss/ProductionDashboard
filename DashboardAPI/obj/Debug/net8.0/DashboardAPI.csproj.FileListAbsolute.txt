@@ -142,3 +142,4 @@ C:\MyProjects\Dashboard-DataCapture\DashboardAPI\bin\Debug\net8.0\DashboardAPI.r
 C:\MyProjects\Dashboard-DataCapture\DashboardAPI\bin\Debug\net8.0\DashboardAPI.pdb
 C:\MyProjects\Dashboard-DataCapture\DashboardAPI\obj\Debug\net8.0\DashboardAPI.genruntimeconfig.cache
 C:\MyProjects\Dashboard-DataCapture\DashboardAPI\obj\Debug\net8.0\ref\DashboardAPI.dll
+C:\MyProjects\Dashboard-DataCapture\dashboardapi\obj\Debug\net8.0\DashboardAPI.sourcelink.json
